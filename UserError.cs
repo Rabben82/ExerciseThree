@@ -1,6 +1,7 @@
 ﻿namespace ExerciseThree;
 
-abstract class UserError
+public abstract class UserError
 {
+    public abstract string UeMessage();
 
 }
