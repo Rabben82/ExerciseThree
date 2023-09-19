@@ -13,5 +13,4 @@ public abstract class Animal
         Weight = weight;
     }
     public abstract void DoSound();
-
 }

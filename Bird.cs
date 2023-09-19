@@ -8,6 +8,12 @@ public class Bird : Animal
     public void WingSpan()
     {
     }
+
+    public virtual void FlyingSpeed()
+    {
+        Console.WriteLine("Average flight of a bird is xxxx");
+    }
+
     public override void DoSound()
     {
         Console.WriteLine("Chirping!");

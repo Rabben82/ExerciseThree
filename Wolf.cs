@@ -7,6 +7,7 @@ public class Wolf : Animal
     }
     public void HowlOfThunder()
     {
+        Console.WriteLine("Howls of thunder!");
     }
     public override void DoSound()
     {

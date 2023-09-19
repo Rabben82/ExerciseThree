@@ -73,6 +73,41 @@
             }
             #endregion
 
+            #region Task 3.3 1-14
+            List<Animal> animals = new List<Animal>();
+            Dog dog = new Dog("Doggy",10, 15.5);
+            Wolf wolf = new Wolf("Wolfy", 14, 25.7);
+            Flamingo flamingo = new Flamingo("Flamingo",13,16);
+            WolfMan wolfMan = new WolfMan("Wolfman", 45, 98);
+            animals.Add(dog);
+            animals.Add(wolf);
+            animals.Add(flamingo);
+
+            foreach (var animal in animals)
+            {
+                Console.WriteLine(animal.Name);
+                animal.DoSound();
+
+                if (animal is Dog doggy)
+                {
+                    doggy.BarkOfTheDevil();
+                }
+
+                if (animal is Flamingo birdFlamingo)
+                {
+                    birdFlamingo.FlyingSpeed();
+                    birdFlamingo.WingsOfStorm();
+                }
+            }
+
+            wolfMan.Talk();
+            wolfMan.HowlOfThunder();
+            //13. It should be in the bird class since its only the birds who need the new attribute
+            //14. If all the animals need the new attribute it should go in the animal class
+
+            #endregion
+
+
         }
     }
 }
