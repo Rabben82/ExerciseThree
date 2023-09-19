@@ -22,12 +22,12 @@ public class Person
             }
         }
     }
-    public string Firstname
+    public string FirstName
     {
         get => firstName;
         set
         {
-            if (value.Length >= 2 && value.Length < 10)
+            if (!string.IsNullOrWhiteSpace(value) && value.Length >= 2 && value.Length < 10)
             {
                 firstName = value;
             }
@@ -42,7 +42,7 @@ public class Person
         get => lastName;
         set
         {
-            if (value.Length >= 3 && value.Length < 15)
+            if (!string.IsNullOrWhiteSpace(value) && value.Length >= 3 && value.Length < 15)
             {
                 lastName = value;
             }
