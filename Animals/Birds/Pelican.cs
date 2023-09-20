@@ -1,4 +1,4 @@
-﻿namespace ExerciseThree;
+﻿namespace ExerciseThree.Animals.Birds;
 
 public class Pelican : Bird
 {
@@ -7,5 +7,6 @@ public class Pelican : Bird
     }
     public void BeakOfDestruction()
     {
+        throw new NotImplementedException();
     }
 }

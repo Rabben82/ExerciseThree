@@ -1,4 +1,4 @@
-﻿namespace ExerciseThree;
+﻿namespace ExerciseThree.Animals.Birds;
 
 public class Flamingo : Bird
 {

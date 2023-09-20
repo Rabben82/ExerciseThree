@@ -1,4 +1,4 @@
-﻿namespace ExerciseThree;
+﻿namespace ExerciseThree.Animals.Birds;
 
 public class Swan : Bird
 {
@@ -8,5 +8,6 @@ public class Swan : Bird
 
     public void WingsOfKnives()
     {
+        throw new NotImplementedException();
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace ExerciseThree;
+﻿namespace ExerciseThree.Animals.Birds;
 
 public class Bird : Animal
 {
@@ -7,6 +7,7 @@ public class Bird : Animal
     }
     public void WingSpan()
     {
+        throw new NotImplementedException();
     }
 
     public virtual void FlyingSpeed()
@@ -17,5 +18,10 @@ public class Bird : Animal
     public override void DoSound()
     {
         Console.WriteLine("Chirping!");
+    }
+
+    public override string Stats()
+    {
+        return $"Name: {Name}\nAge: {Age}\nWeight: {Weight}";
     }
 }

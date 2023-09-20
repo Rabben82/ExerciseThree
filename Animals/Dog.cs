@@ -1,4 +1,4 @@
-﻿namespace ExerciseThree;
+﻿namespace ExerciseThree.Animals;
 
 public class Dog : Animal
 {
@@ -12,5 +12,16 @@ public class Dog : Animal
     public override void DoSound()
     {
         Console.WriteLine("Barking");
+    }
+
+    public override string Stats()
+    {
+
+        return $"Name: {Name}\nAge: {Age}\nWeight: {Weight}";
+    }
+
+    public string SpecialAttack()
+    {
+        return "Attacks with paws of fury!";
     }
 }

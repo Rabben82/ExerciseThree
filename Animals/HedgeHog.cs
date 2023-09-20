@@ -1,4 +1,4 @@
-﻿namespace ExerciseThree;
+﻿namespace ExerciseThree.Animals;
 
 public class HedgeHog : Animal
 {
@@ -7,10 +7,15 @@ public class HedgeHog : Animal
     }
     public void NrOfSpikes()
     {
+        throw new NotImplementedException();
     }
     public override void DoSound()
     {
         Console.WriteLine("Grunting and snuffing!");
-        ;
+    }
+
+    public override string Stats()
+    {
+        return $"Name: {Name}\nAge: {Age}\nWeight: {Weight}";
     }
 }
