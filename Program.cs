@@ -10,7 +10,7 @@ namespace ExerciseThree
         {
             #region Task 3.1 1-2
             //var person = new Person();
-
+            //PersonHandler personHandler = new PersonHandler();
             //personHandler.SetAge(person, 45);
 
             //try
@@ -56,6 +56,9 @@ namespace ExerciseThree
             personHandler.SetLastName(person2, "rabben");
 
             personHandler.PrintPerson(person2);
+
+            var getFullName = personHandler.GetFullName(person1);
+            Console.WriteLine(getFullName);
             #endregion
 
             #region Task 3.2 1-10
@@ -122,7 +125,6 @@ namespace ExerciseThree
             
             //var sum = wolfMan.Stats();
             //Console.WriteLine(sum);
-
             animals.Add(wolfMan);
             animals.Add(wolf);
             animals.Add(pelican);
@@ -180,6 +182,7 @@ namespace ExerciseThree
             //13. Since all different animals inherits from the base class Animal and we put them in a list that accepts classes that inherits from Animal we can access the method in the base class called Stats. We override that method in the derived classes, so when we iterate through the list it checks if there are any overriden methods and if it is it calls that method. 
             //14. Since the method is not in the Animal class that we inherit from and we treat all our objects as Animal when we put them into the animals list. We therefore don't have access to the individual methods in for example the Dog class. We need to check if Dog is in the animal list and then typecast it and then we can get access to the methods in the dog class.
             #endregion
+
         }
     }
 }

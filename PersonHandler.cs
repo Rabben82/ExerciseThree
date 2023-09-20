@@ -22,6 +22,12 @@ public class PersonHandler
     {
         pers.Weight = weight;
     }
+
+    public string GetFullName(Person person)
+    {
+        return $"First Name: {person.FirstName}\nLast Name: {person.LastName}";
+    }
+
     public Person CreatePerson(int age, string fName, string lName, double height, double weight)
     {
         Person person = new Person();
